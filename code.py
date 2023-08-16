@@ -181,7 +181,7 @@ rating_bins = [0,5,6,10]
 data['Rating Category']=pd.cut(data['Rating'],bins = rating_bins, labels = rating_label, right =  False)
 data.head(10)
 
-## COunt the number of action films
+## Count the number of action films
 ## Compter le nombre de films d'action
 data['Genre'].dtype
 action_movies_count = data[data['Genre'].str.contains('Action', case=False)].shape[0]
